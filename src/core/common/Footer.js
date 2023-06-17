@@ -1,7 +1,137 @@
 import React from 'react'
+import { styled } from 'styled-components'
+import logo from "./../../assets/images/common/logo.svg"
+import meta from "./../../assets/images/common/Facebook.svg"
+import instagram from "./../../assets/images/common/Instagram.svg"
+import linkedin from "./../../assets/images/common/Linkdin.svg"
+import twitter from "./../../assets/images/common/Twitter.svg"
+import email from "./../../assets/images/common/Icon.png"
+import call from "./../../assets/images/common/Icon (1).png"
+import address from "./../../assets/images/common/Icon (2).png"
+
+
 
 export default function Footer() {
   return (
-    <div>Footer</div>
+    <Wrapper>
+      <div>
+        <div className='top'>
+        <ul>
+          <li>
+            <img className='logo' src={logo}/>
+            <p>Reeroute: India's Fastest Truck Booking Platform!</p>
+            <div className='social'>
+              <h4>Follow us on</h4>
+              <div>
+                <img src={instagram}/>
+                <img src={meta}/>
+                <img src={twitter}/>
+                <img src={linkedin}/>
+              </div>
+            </div>
+          </li>
+          <li>
+            <p>About Us</p>
+            <p>How it Works</p>
+            <p>Download App</p>
+            <p>Contact</p>
+          </li>
+          <li>
+            <p>Careers</p>
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+          </li>
+          <li className='icon-text'>
+            <div>
+              <div>
+                <img src={email}/>
+              </div>
+              <div>
+                <p>Email</p>
+                <p>contact@logistics.com</p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src={call}/>
+              </div>
+              <div>
+                <p>Email</p>
+                <p>contact@logistics.com</p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src={address}/>
+              </div>
+              <div>
+                <p>Email</p>
+                <p>contact@logistics.com</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        </div>
+        <div className='bottom'>
+          <p >Copyright © ReeRoute | Designed by Jethi Tech</p>
+        </div>
+      </div>
+    </Wrapper>
   )
 }
+const Wrapper=styled.div`
+width:100vw;
+position: relative;
+background-color: #2A4F6D;
+color: white;
+&>div{
+  position: relative;
+  max-width: 1196px;
+  margin: auto;
+  p{
+  font-size: 14px;
+}
+  .top{
+    padding-top: 140px ;
+    padding-bottom: 50px ;
+    ul{
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      &>li{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .logo{
+          width: 100px;
+          margin-top: -46px;
+        }
+        .social{
+          padding:10px 0;
+          div{
+            padding:10px 0;
+            display: flex;
+            gap: 12px;
+          }
+        }
+      }
+      &>.icon-text{
+        &>div{
+            display: flex;
+            gap: 30px;
+          }
+      }
+    }
+
+  }
+  .bottom{
+    padding: 20px 0;
+    border-top: 1px solid  #4E5683;
+    p{
+      text-align: center;
+    }
+  }
+}
+
+
+`
