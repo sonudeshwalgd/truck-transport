@@ -1,6 +1,8 @@
 import React from 'react'
 import { styled } from 'styled-components'
 import mobile from "./../../../../../assets/images/homepage/0888 4.svg"
+import playStore from "./../../../../../assets/images/homepage/button.png"
+import iosStore from "./../../../../../assets/images/homepage/button (1).png"
 
 export default function ShipperApp() {
   return (
@@ -22,7 +24,15 @@ export default function ShipperApp() {
                 <div>
                     <h4>Customer Centricity</h4>
                     <p>Your satisfaction is our top priority. Our dedicated team is here to provide exceptional customer support at every stage of your trip. </p>
-                </div>            
+                </div> 
+                <div className='play'>
+                    <h5>Download Shipper App</h5>
+                    <div>
+                        <img src={playStore}/>
+                        <img src={iosStore}/>
+                    </div>
+                    <h5>Comming soon </h5>
+                </div>           
 
 
             </div>
@@ -54,17 +64,26 @@ background-color: #F4F4F4;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        max-width: 400px;
+        max-width: 430px;
+        padding: 60px 0 0 0;
 
         &>div{
             h4{
                 color:#2A4F6D ;
                 font-size: 20px;
             }
+            h5{
+                padding: 8px 0 4px 0;
+                font-size: 16px;
+
+            }
             p{
                 color: #2A4F6D;
                 font-size: 16px;
             }
+        }
+        .play{
+            padding-top: 10px;
         }
     }
 }

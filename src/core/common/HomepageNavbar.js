@@ -74,12 +74,12 @@ export default function HomepageNavbar() {
           <li className="after-span"><span></span></li>
           <li>
             <NavLink
-              to="/contact"
+              to="/request-form"
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "active" : ""
               }
             >
-              Contact
+              Request
             </NavLink>
           </li>
         </ul>

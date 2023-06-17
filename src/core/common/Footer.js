@@ -8,6 +8,7 @@ import twitter from "./../../assets/images/common/Twitter.svg"
 import email from "./../../assets/images/common/Icon.png"
 import call from "./../../assets/images/common/Icon (1).png"
 import address from "./../../assets/images/common/Icon (2).png"
+import { Link } from 'react-router-dom'
 
 
 
@@ -23,23 +24,23 @@ export default function Footer() {
             <div className='social'>
               <h4>Follow us on</h4>
               <div>
-                <img src={instagram}/>
-                <img src={meta}/>
-                <img src={twitter}/>
-                <img src={linkedin}/>
+                <a href="#" className='link'><img src={instagram}/></a>
+                <a href="#" className='link'><img src={meta}/></a>
+                <a href="#" className='link'><img src={twitter}/></a>
+                <a href="#" className='link'><img src={linkedin}/></a>
               </div>
             </div>
           </li>
           <li>
-            <p>About Us</p>
-            <p>How it Works</p>
-            <p>Download App</p>
-            <p>Contact</p>
+            <Link className='link'>About Us</Link >
+            <Link className='link'>How it Works</Link >
+            <Link className='link'>Download App</Link >
+            <Link className='link'>Contact</Link >
           </li>
           <li>
-            <p>Careers</p>
-            <p>Terms & Conditions</p>
-            <p>Privacy Policy</p>
+            <Link className='link'>Careers</Link>
+            <Link className='link'>Terms & Conditions</Link>
+            <Link className='link'>Privacy Policy</Link>
           </li>
           <li className='icon-text'>
             <div>
@@ -91,6 +92,12 @@ color: white;
   p{
   font-size: 14px;
 }
+.link{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+
+  }
   .top{
     padding-top: 140px ;
     padding-bottom: 50px ;

@@ -4,22 +4,22 @@ import { styled } from 'styled-components'
 export default function BookTruck() {
   return (
     <Wrapper>
-        <div>
+        <form>
             <h3> Book Your Truck</h3>
             <div>
-                <p>From</p>
-                <input/>
+                <label for ="origin">From</label>
+                <input id="origin" name='origin' />
             </div>
             <div>
-                <p>To</p>
-                <input/>
+                <label for="destination">To</label>
+                <input id="destination" name="destination"/>
             </div>
             <div>
                 <button type='submit'>Next</button>
             </div>
 
 
-        </div>
+        </form>
 
     </Wrapper>
   )
@@ -28,12 +28,12 @@ export default function BookTruck() {
 const Wrapper=styled.div`
 position: relative;
 width: 100%;
-&>div{
+&>form{
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
     padding: 20px;
-    gap: 7vh;
+    gap: 4vh;
     display: flex;
     flex-direction: column;
     color: black;
@@ -45,7 +45,7 @@ width: 100%;
         input{
             width: 100%;
             min-width: 18vw;
-            padding: 6px 12px;
+            padding: 8px 12px;
             border: 1px solid #ccc;
             /* outline: 1px solid #333; */
 
@@ -56,6 +56,7 @@ width: 100%;
             border: none;
             outline: none;
             padding: 10px;
+            margin-top: 7vh;
         }
     }
 
