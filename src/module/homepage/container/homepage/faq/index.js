@@ -42,12 +42,12 @@ export default function FAQ() {
           id="panel1bh-header"
         >
    
-          <Typography sx={{ color: 'black' }}>I am an accordion</Typography>
+          <Typography sx={{ color: 'black' }}>How can I make an online truck booking?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography className='accordian-body'>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-            Aliquam eget maximus est, id dignissim quam.
+          Booking your truck with ReeRoute is very simple. Just add pickup and destination location. Then, select the weight of goods, type, and size of the truck. 
+Our network of truckers will provide you the best prices with highest reliability.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -58,14 +58,13 @@ export default function FAQ() {
           id="panel2bh-header"
         >
           <Typography sx={{ color: 'black' }}>
-            You are currently not an owner
+          Can I place a booking with multi-point pick up and drop?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography className='accordian-body'>
-            Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus,
-            varius pulvinar diam eros in elit. Pellentesque convallis laoreet
-            laoreet.
+          Booking your truck with ReeRoute is very simple. Just add pickup and destination location. Then, select the weight of goods, type, and size of the truck.
+Our network of truckers will provide you the best prices with highest reliability.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -77,13 +76,13 @@ export default function FAQ() {
         >
      
           <Typography sx={{ color: 'black' }}>
-            Filtering has been entirely disabled for whole web server
+          Can I cancel my booking? Is there any cancellation fee?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography className='accordian-body'>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
-            amet egestas eros, vitae egestas augue. Duis vel est augue.
+          Booking your truck with ReeRoute is very simple. Just add pickup and destination location. Then, select the weight of goods, type, and size of the truck.
+Our network of truckers will provide you the best prices with highest reliability.
           </Typography>
         </AccordionDetails>
       </Accordion>
