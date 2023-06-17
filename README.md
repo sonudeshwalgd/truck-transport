@@ -1,3 +1,14 @@
+# dependencies
+node version : v16.14.2
+npm -v :8.5.0
+react: ^18.2.0
+react-dom: ^18.2.0
+
+# active routes 
+1: "/"
+2: "/request-form"
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
