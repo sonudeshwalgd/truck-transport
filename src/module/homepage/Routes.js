@@ -5,12 +5,14 @@ import { HomepageBanner } from './pages/HomepageBanner'
 import HomepageNavbar from '../../core/common/HomepageNavbar'
 import { HomepageRequestForm } from './pages/RequestForm'
 import { styled } from 'styled-components'
+import NOTFOUND404 from '../../core/common/NOTFOUND404'
 
 
 
 export const HomepageRoutes=[
   <Route index element={<HomepageBanner/>}/>,
   <Route path="/request-form" element={<HomepageRequestForm/>}/>,
+  <Route path="/*" element={<NOTFOUND404/>}/>,
 
 ]
 

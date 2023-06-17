@@ -11,7 +11,6 @@ export default function Numbers() {
   return (
     <Wrapper>
         <div>
-
         {numbersData.map(ele=>{
             return(
                 <Cards number={ele.numbers} category={ele.category}/>
