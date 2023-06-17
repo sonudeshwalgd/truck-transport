@@ -4,6 +4,7 @@ import Footer from '../../core/common/Footer'
 import { HomepageBanner } from './pages/HomepageBanner'
 import HomepageNavbar from '../../core/common/HomepageNavbar'
 import { HomepageRequestForm } from './pages/RequestForm'
+import { styled } from 'styled-components'
 
 
 
@@ -17,11 +18,20 @@ export const HomepageRoutes=[
 export  function HomePageOutlet() {
   return (
     <>
-        <HomepageNavbar/>
+        <Main>
+          <HomepageNavbar/>
+        </Main>
         <Outlet/>
         <Footer/>
     
     </>
   )
 }
+
+const Main=styled.div`
+position:absolute;
+top: 0;
+width: 100vw;
+z-index: 99;
+`
 
